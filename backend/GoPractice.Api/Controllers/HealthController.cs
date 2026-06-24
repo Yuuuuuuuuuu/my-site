@@ -2,17 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GoPractice.Api.Controllers;
 
-[ApiController]
 [Route("api/[controller]")]
-public class HealthController : ControllerBase
+public class HealthController : BaseApiController
 {
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(new
-        {
-            status = "ok",
-            timestamp = DateTime.UtcNow.ToString("o")
-        });
+        return Success("service is running");
     }
 }
