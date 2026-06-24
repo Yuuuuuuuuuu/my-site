@@ -1,11 +1,7 @@
-name: Test Runner
-
-on:
-  workflow_dispatch:
-
+name: Test
+on: [workflow_dispatch]
 jobs:
-  test:
+  t:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
-      - run: uname -a
+      - run: echo hello
