@@ -70,4 +70,4 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "frontend/dist/"
           target: "/var/www/go-practice/frontend"
-          strip_components: 1
+          strip_components: 2
