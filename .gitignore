@@ -1,11 +1,9 @@
-# Go
-backend/bin/
-backend/tmp/
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# .NET
+backend/**/bin/
+backend/**/obj/
+publish/
+*.user
+*.suo
 
 # Frontend
 frontend/node_modules/
